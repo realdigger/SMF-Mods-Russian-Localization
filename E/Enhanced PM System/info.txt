@@ -6,7 +6,7 @@
 [link]
 [license]
 [conditions]                          
-[win1251]
+[win1251] да
 [utf8] да
 [type] файл
 [comment] скопировать в /Themes/default/languages/
