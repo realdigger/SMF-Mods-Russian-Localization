@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>GeorG:LanguageRussianSimplePortal</id>
+	<name>Language Russian SimplePortal</name>
+	<type>modification</type>
+	<version>1.0</version>
+
+	<install>
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<require-file name="SPortal.russian.php" destination="$languagedir" />
+		<require-file name="SPortalHelp.russian.php" destination="$languagedir" />
+		<require-file name="SPortalAdmin.russian.php" destination="$languagedir" />
+		<require-file name="SPortal.russian-utf8.php" destination="$languagedir" />
+		<require-file name="SPortalHelp.russian-utf8.php" destination="$languagedir" />
+		<require-file name="SPortalAdmin.russian-utf8.php" destination="$languagedir" />
+		<redirect url="?action=admin;area=portalconfig" timeout="1000" />
+	</install>
+
+	<uninstall>
+		<remove-file name="$languagedir/SPortal.russian.php" />
+		<remove-file name="$languagedir/SPortalHelp.russian.php" />
+		<remove-file name="$languagedir/SPortalAdmin.russian.php" />
+		<remove-file name="$languagedir/SPortal.russian-utf8.php" />
+		<remove-file name="$languagedir/SPortalHelp.russian-utf8.php" />
+		<remove-file name="$languagedir/SPortalAdmin.russian-utf8.php" />
+		<redirect url="?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+</package-info>
