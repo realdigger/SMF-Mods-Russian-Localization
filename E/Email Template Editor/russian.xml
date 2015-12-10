@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:ETE_RUS</id>
+	<name>Email Template Editor RUS</name>
+	<version>0.2</version>
+
+	<file name="$languagedir/Help.russian.php" error="skip">
+		<operation>
+			<search position="end" />
+				<add><![CDATA[
+// Email Template Editor
+global $context, $txt, $scripturl, $settings;
+$helptxt['email_template_help_global_presets'] = '√лобальные предустановленные переменные Ч это обычные €рлыки, которые можно использовать в почтовых шаблонах.<br /><br /><strong>—писок переменных</strong><br /><div style="font-size: 6pt;">{FORUMNAME} => '. $context['forum_name']. '<br />{SCRIPTURL} => '. $scripturl. '<br />{THEMEURL} => '. $settings['theme_url']. '<br />{IMAGESURL} => '. $settings['images_url']. '<br />{DEFAULT_THEMEURL} => '. $settings['default_theme_url']. '<br />{REGARDS} => '. $txt['regards_team']. '</div><br /><em>ярлык => «начение</em>';
+$helptxt['email_template_help_send_test_email'] = 'ќтправка тестового сообщени€ поможет проверить изменение содержани€ уведомлений, рассылаемых форумом.';
+]]></add>
+		</operation>
+	</file>
+	
+	<file name="$languagedir/Modifications.russian.php" error="skip">
+		<operation>
+			<search position="end"></search>
+			<add><![CDATA[
+// Email Template Editor
+$txt['email_template_editor'] = '–едактор шаблонов уведомлений';
+]]></add>
+		</operation>
+	</file>
+
+</modification>

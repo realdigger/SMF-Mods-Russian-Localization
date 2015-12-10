@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:ETE_RUS</id>
+	<name>Email Template Editor RUS</name>
+	<type>modification</type>
+	<version>0.2</version>
+	
+	<install for="2.0 - 2.99.99">
+		<modification>russian.xml</modification>
+		<modification>russian-utf8.xml</modification>
+		<require-file name="EmailTemplateEditor.russian.php" destination="$languagedir" />
+		<require-file name="EmailTemplateEditor.russian-utf8.php" destination="$languagedir" />
+		<redirect url="?action=admin;area=emailtemplates" timeout="1000" />
+	</install>
+	
+	<uninstall for="2.0 - 2.99.99">
+		<modification type="file" reverse="true">russian.xml</modification>
+		<modification type="file" reverse="true">russian-utf8.xml</modification>
+		<remove-file name="$languagedir/EmailTemplateEditor.russian.php" />	
+		<remove-file name="$languagedir/EmailTemplateEditor.russian-utf8.php" />
+		<redirect url="?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+</package-info>
