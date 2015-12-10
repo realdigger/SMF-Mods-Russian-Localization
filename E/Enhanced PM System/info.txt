@@ -4,7 +4,7 @@
 [mod_version] 3.4
 [author]
 [link]
-[license]
+[license] Creative Commons Attribution 3.0 Unported License
 [conditions]                          
 [win1251] да
 [utf8] да
