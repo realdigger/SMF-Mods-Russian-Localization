@@ -1,6 +1,6 @@
 <?php
 /**********************************************************************************
-* InlineAttachments.english.php - English language file
+* InlineAttachments.russian-utf8.php - Russian language file
 ***********************************************************************************
 * This mod is licensed under the 2-clause BSD License, which can be found here:
 *	http://opensource.org/licenses/BSD-2-Clause

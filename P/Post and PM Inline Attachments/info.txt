@@ -4,9 +4,9 @@
 [mod_version] 4.14
 [author]
 [link]
-[license]
+[license] BSD License
 [conditions]                          
-[win1251]
+[win1251] да
 [utf8] да
 [type] файл
 [comment] скопировать в /Themes/default/languages/
