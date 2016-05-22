@@ -105,7 +105,7 @@ $txt['sp-blocksBodyDefaultClass'] = 'Default Body Class';
 $txt['sp-blocksBodyCustomClass'] = 'Custom Body Class';
 $txt['sp-blocksBodyCustomStyle'] = 'Custom Body Style';
 $txt['sp-blocksNoTitle'] = 'Не отображать заголовок блока';
-$txt['sp-blocksNoBody'] = 'Не отображать содержимое блока';
+$txt['sp-blocksNoBody'] = 'Не отображать фон блока';
 
 // Block labels
 $txt['sp_function_sp_userInfo_label'] = 'Информация Пользователя';
