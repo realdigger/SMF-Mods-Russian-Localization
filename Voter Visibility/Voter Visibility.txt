@@ -1,0 +1,29 @@
+В файл Modifications.russian[-utf8].php добавляем блок:
+
+// Voter Visibility
+$txt['poll_vv_opt'] = 'Просмотр списка проголосовавших';
+$txt['poll_vv_opt_ro'] = '(только для чтения)';
+$txt['poll_vv_opt_public'] = 'ОТКРЫТЫЙ';
+$txt['poll_vv_opt_discrete'] = 'РАЗДЕЛЬНЫЙ';
+$txt['poll_vv_opt_private'] = 'ЧАСТНЫЙ';
+$txt['poll_vv_opt_public_txt'] = 'Результаты доступны всем.';
+$txt['poll_vv_opt_discreet_txt'] = 'Результаты доступны только автору и админам.';
+$txt['poll_vv_opt_private_txt'] = 'Результаты доступны только админам.';
+$txt['poll_vv_vlog_empty'] = 'Никто пока не голосовал.';
+$txt['poll_vv_vlog_title'] = 'Лог голосов';
+$txt['poll_vv_vlog_button'] = 'Просмотр голосов';
+$txt['poll_vv_vlog_for'] = 'Ответы на %1$s опрос:';
+$txt['poll_vv_vlog_th_tstamp'] = 'Дата';
+$txt['poll_vv_vlog_th_member'] = 'Пользователь';
+$txt['poll_vv_vlog_th_choicenum'] = 'Выбор';
+$txt['poll_vv_vlog_th_choicelbl'] = 'Текст';
+$txt['poll_vv_vlog_th_comment'] = 'Комментарий';
+$txt['poll_vv_vlog_err_discrete'] = 'Опрос является РАЗДЕЛЬНЫМ, а вы не автор и не администратор!';
+$txt['poll_vv_vlog_err_private'] = 'Опрос является ЧАСТНЫМ, а вы не администратор!';
+$txt['poll_vv_vlog_vote_warning'] = 'Это %1$s опрос. %2$s';
+$txt['poll_vv_vlog_guest_or_unknown'] = '(Гость или удаленный пользователь)';
+$txt['poll_vv_shwcmt_opt'] = 'Разрешить комментарии';
+$txt['poll_vv_reqcmt_opt'] = 'Требовать комментарий для вариантов';
+$txt['poll_vv_reqcmt_warn'] = '(требуется комментарий)';
+$txt['poll_vv_cmt_label'] = 'Комментарий';
+$txt['poll_vv_cmt_missing_required'] = 'При выборе варианта %1$d: "%2$s" его нужно обязательно прокомментировать.';
