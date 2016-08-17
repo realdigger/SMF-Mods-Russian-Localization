@@ -1,0 +1,10 @@
+// EU Cookie
+$txt['mods_cat_eucookie'] = 'Уведомление о Cookie';
+$txt['enable_eucookie'] = 'Включить уведомление об использовании Cookie';
+$txt['eucookie_color'] = 'Выбрать цвет';
+$txt['eucookie_black'] = 'Черный';
+$txt['eucookie_white'] = 'Белый';
+$txt['eucookie_notice'] = 'Текст уведомления:';
+$txt['eucookie_text'] = 'Файлы cookie помогают нам улучшить ваше взаимодействие с сайтом. Используя наш сайт, вы даете согласие на использование нами файлов cookie.';
+$txt['eucookie_policy'] = 'Ссылка на страницу про использование Cookie';
+$txt['eucookie_more'] = 'Узнать больше';
