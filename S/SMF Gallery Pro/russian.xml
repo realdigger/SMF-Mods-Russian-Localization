@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>georg:smfgallery_rus</id>
+
+	<file name="$languagedir/Modifications.russian.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['smfgallery_menu'] = 'Галерея';
+$txt['gallery_menu_addpic'] = 'Добавить изображение';
+$txt['gallery_menu_addvideo'] = 'Добавить видео/аудио';
+$txt['gallery_menu_search'] = 'Поиск';
+$txt['gallery_menu_stats'] = 'Статистика';
+$txt['gallery_text_settings'] = 'Настройки';
+
+$txt['permissionname_smfgallery_bulk'] = 'Массовая загрузка';
+$txt['permissionhelp_smfgallery_bulk'] = 'Разрешить пользователю использовать функцию массовой загрузки.';
+$txt['cannot_smfgallery_bulk'] = 'Вам не разрешена массовая загрузка.';
+$txt['permissionname_smfgallery_ratepic'] = 'Оценить изображение';
+$txt['permissionhelp_smfgallery_ratepic'] = 'Разрешить пользователям оцентивать изображения.';
+$txt['cannot_smfgallery_ratepic'] = 'Вам не разрешено оценивать это изображение.';
+$txt['permissionname_smfgallery_autocomment'] = 'Автоодобрение комментариев';
+$txt['permissionhelp_smfgallery_autocomment'] = 'Комментарии не нуждаются в ожидании одобрения.';
+$txt['permissionname_smfgallery_usergallery'] = 'Личная галерея';
+$txt['permissionhelp_smfgallery_usergallery'] = 'Разрешить пользователям иметь личные галереи.';
+$txt['cannot_smfgallery_usergallery'] = 'Вам не разрешено иметь личную галерею.';
+$txt['permissiongroup_smfgalleryvideo'] = 'SMF Gallery Pro видео/аудио';
+$txt['permissionname_smfgalleryvideo_add'] = 'Добавить видео/аудио';
+$txt['permissionhelp_smfgalleryvideo_add'] = 'Разрешить пользователям добавлять видео/аудио';
+$txt['cannot_smfgalleryvideo_add'] = 'Вам не разрешено добавлять видео/аудио.';
+$txt['permissionname_smfgallery_editcomment'] = 'Редактировать свой комментарий';
+$txt['permissionhelp_smfgallery_editcomment'] = 'Разрешить пользователям редактировать свой комментарий.';
+$txt['cannot_smfgallery_editcomment'] = 'Вам не разрешено редактировать этот комментарий.';
+]]></add>
+		</operation>
+	</file>
+
+</modification>
