@@ -1,0 +1,19 @@
+// Block e-mail usernames
+$txt['registration_failed_email_provider1'] = 'Регистрация прервана: запрещено использование адресов данного провайдера в именах пользователей.';
+$txt['registration_failed_email'] = 'Регистрация прервана: запрещено использование любых e-mail в качестве имен.';
+$txt['registration_failed_email_provider2'] = 'Регистрация прервана: запрещено использование адресов данного провайдера.';
+$txt['blockemail'] = 'Блокировка имен в виде e-mail';
+$txt['enableblockemail'] = 'Включить блокировку';
+$txt['block_by_provider'] = 'Блокировка по провайдеру';
+$txt['email_providers_deny'] = 'Список провайдеров, через точку с запятой (;)
+<div class="smalltext">Опция выше должна быть включена.</div>';
+$txt['also_check_email_addresses'] = 'Проверять e-mail
+<div class="smalltext">Не забудьте включить блокировку или разрешение по провайдеру.</div>';
+$txt['allow_by_provider'] = 'Разрешать регистрацию только при использовании следующих провайдеров';
+$txt['email_providers_allow'] = 'Список провайдеров, через точку с запятой (;)
+<div class="smalltext">Опция выше должна быть включена.</div>';
+
+$txt['block_what'] = 'Что проверять';
+$txt['what_username'] = 'Имена пользователей';
+$txt['what_email'] = 'E-mail адреса';
+$txt['what_both'] = 'Оба параметра';
