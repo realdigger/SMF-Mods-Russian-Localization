@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:DownloadSystemRUS</id>
+	<name>Downloads System RUS</name>
+	<type>modification</type>
+	<version>0.5</version>
+	
+	<install for="1.1 - 1.99.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<modification type="file">russian.xml</modification>
+		<modification type="file">russian-utf8.xml</modification>
+		<require-file name="Downloads.russian.php" destination="$languagedir" />
+		<require-file name="Downloads.russian-utf8.php" destination="$languagedir" />
+		<redirect url="?action=downloads;sa=adminset" timeout="1000" />
+	</install>
+	
+	<uninstall for="1.1 - 1.99.99">
+		<modification type="file" reverse="true">russian.xml</modification>
+		<modification type="file" reverse="true">russian-utf8.xml</modification>
+		<remove-file name="$languagedir/Downloads.russian.php" />
+		<remove-file name="$languagedir/Downloads.russian-utf8.php" />
+		<redirect url="?action=packages;sa=browse" timeout="1000" />
+	</uninstall>
+
+	<install for="2.0 - 2.99.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<modification type="file">russian.xml</modification>
+		<modification type="file">russian-utf8.xml</modification>
+		<require-file name="Downloads.russian.php" destination="$languagedir" />
+		<require-file name="Downloads.russian-utf8.php" destination="$languagedir" />
+		<redirect url="?action=admin;area=downloads;sa=adminset" timeout="1000" />
+	</install>
+	
+	<uninstall for="2.0 - 2.99.99">
+		<modification type="file" reverse="true">russian.xml</modification>
+		<modification type="file" reverse="true">russian-utf8.xml</modification>
+		<remove-file name="$languagedir/Downloads.russian.php" />
+		<remove-file name="$languagedir/Downloads.russian-utf8.php" />
+		<redirect url="?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+</package-info>

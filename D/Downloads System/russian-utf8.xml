@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:DownloadSystemRUS</id>
+	<version>0.5</version>
+
+	<file name="$languagedir/Modifications.russian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// Downloads System
+$txt['downloads_menu'] = 'Файловый архив';
+$txt['downloads_admin'] = 'Файловый архив';
+$txt['downloads_text_settings'] = 'Настройки';
+$txt['downloads_form_approvedownloads'] = 'Одобрение файлов';
+$txt['downloads_form_reportdownloads'] = 'Файлы, о которых сообщили';
+$txt['downloads_form_approvecomments'] = 'Одобрение комментариев';
+$txt['downloads_filespace'] = 'Менеджер размера хранилища';
+$txt['downloads_text_catpermlist2'] = 'Права доступа';
+$txt['downloads_txt_import'] = 'Импорт';
+$txt['permissiongroup_downloads'] = 'Файловый архив';
+$txt['permissiongroup_simple_downloads'] = 'Файловый архив';
+$txt['permissionname_downloads_view'] = 'Просмотр файлов';
+$txt['permissionhelp_downloads_view'] = 'Пользователи могут просматривать файлы.';
+$txt['cannot_downloads_view'] = 'Вам запрещено просматривать файловый архив.';
+$txt['permissionname_downloads_add'] = 'Добавление файлов';
+$txt['permissionhelp_downloads_add'] = 'Пользователи могут добавлять файлы.';
+$txt['cannot_downloads_add'] = 'Вам запрещено добавлять файлы.';
+$txt['permissionname_downloads_edit'] = 'Изменение своих файлов';
+$txt['permissionhelp_downloads_edit'] = 'Пользователи могут изменять свои файлы.';
+$txt['cannot_downloads_edit'] = 'Вам запрещено изменять файлы.';
+$txt['permissionname_downloads_delete'] = 'Удаление своих файлов';
+$txt['permissionhelp_downloads_delete'] = 'Пользователи могут удалять свои файлы.';
+$txt['cannot_downloads_delete'] = 'Вам запрещено удалять файлы.';
+$txt['permissionname_downloads_ratefile'] = 'Оценивание файлов';
+$txt['permissionhelp_downloads_ratefile'] = 'Пользователи могут оценивать файлы.';
+$txt['cannot_downloads_ratefile'] = 'Вам запрещено оценивать файлы.';
+$txt['permissionname_downloads_editcomment'] = 'Изменение своих комментариев';
+$txt['permissionhelp_downloads_editcomment'] = 'Пользователи могут изменять свои комментарии.';
+$txt['cannot_downloads_editcomment'] = 'Вам запрещено изменять комментарии.';
+$txt['permissionname_downloads_comment'] = 'Комментирование файлов';
+$txt['permissionhelp_downloads_comment'] = 'Пользователи могут оставлять комментарии к файлам.';
+$txt['cannot_downloads_comment'] = 'Вам запрещено оставлять комментарии.';
+$txt['permissionname_downloads_report'] = 'Жалобы на файлы/комментарии';
+$txt['permissionhelp_downloads_report'] = 'Пользователи могут сообщать о непотребных файлах и комментариях.';
+$txt['cannot_downloads_report'] = 'Вам запрещено сообщать о файлах или комментариях.';
+$txt['permissionname_downloads_autocomment'] = 'Автоодобрение комментариев';
+$txt['permissionhelp_downloads_autocomment'] = 'Комментарии будут добавляться сразу, без одобрения модераторами.';
+$txt['permissionname_downloads_autoapprove'] = 'Автоодобрение файлов';
+$txt['permissionhelp_downloads_autoapprove'] = 'Файлы будут добавляться сразу, без одобрения модераторами.';
+$txt['permissionname_downloads_manage'] = 'Управление файловым архивом';
+$txt['permissionhelp_downloads_manage'] = 'Пользователи могут добавлять/удалять/изменять все категории. Удалять комментарии, удалять файлы, одобрять файлы';
+$txt['cannot_downloads_manage'] = 'Вам запрещено управлять файловым архивом.';
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Who.russian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// Downloads System
+$txt['whoall_downloads'] = 'Просматривает <a href="' . $scripturl . '?action=downloads">файловый архив</a>.';
+]]></add>
+		</operation>
+	</file>
+
+</modification>
