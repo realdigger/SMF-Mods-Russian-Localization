@@ -4,15 +4,15 @@
  *
  * @package showCustomMembergroups mod
  * @version 1.0
- * @author Jessica Gonz?lez <suki@missallsunday.com>
- * @copyright Copyright (c) 2013, Jessica Gonz?lez
+ * @author Jessica GonzГЎlez <suki@missallsunday.com>
+ * @copyright Copyright (c) 2013, Jessica GonzГЎlez
  * @license http://www.mozilla.org/MPL/2.0/
  */
 
 global $txt;
 
-$txt['sCM_title'] = 'Показ дополнительных групп';
-$txt['sCM_setting_pageTitle'] = 'SCM панель управления';
-$txt['sCM_groups_ids'] = 'Укажите ID групп, которые вы хотите показывать для всех пользователей';
-$txt['sCM_groups_ids_sub'] = 'разделяйте запятой если несколько групп (1,2,3,4) или оставьте пустым чтобы показвать все группы.';
-$txt['sCM_ui'] = 'Дополнительные группы';
+$txt['sCM_title'] = 'РџРѕРєР°Р· РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РіСЂСѓРїРї';
+$txt['sCM_setting_pageTitle'] = 'SCM РїР°РЅРµР»СЊ СѓРїСЂР°РІР»РµРЅРёСЏ';
+$txt['sCM_groups_ids'] = 'РЈРєР°Р¶РёС‚Рµ ID РіСЂСѓРїРї, РєРѕС‚РѕСЂС‹Рµ РІС‹ С…РѕС‚РёС‚Рµ РїРѕРєР°Р·С‹РІР°С‚СЊ РґР»СЏ РІСЃРµС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№';
+$txt['sCM_groups_ids_sub'] = 'СЂР°Р·РґРµР»СЏР№С‚Рµ Р·Р°РїСЏС‚РѕР№ РµСЃР»Рё РЅРµСЃРєРѕР»СЊРєРѕ РіСЂСѓРїРї (1,2,3,4) РёР»Рё РѕСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј С‡С‚РѕР±С‹ РїРѕРєР°Р·РІР°С‚СЊ РІСЃРµ РіСЂСѓРїРїС‹.';
+$txt['sCM_ui'] = 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РіСЂСѓРїРїС‹';
