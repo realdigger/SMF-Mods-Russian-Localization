@@ -1,0 +1,4 @@
+$txt['group_prefix_title'] = 'Префиксы групп';
+$txt['enable_group_prefix'] = 'Включить префиксы групп';
+$txt['prefix'] = 'Префикс';
+$txt['prefix2'] = 'Префикс группы';
