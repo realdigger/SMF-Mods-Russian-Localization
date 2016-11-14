@@ -1,0 +1,8 @@
+// Additional Topic Authors
+$txt['add_authors'] = 'Дополнительные авторы:';
+$txt['permissionname_add_authors'] = 'Добавление дополнительных авторов';
+$txt['permissionhelp_add_authors'] = 'Возможность добавлять других пользователей в качестве дополнительных авторов, для доступа к редактированию первого сообщения темы.';
+$txt['permissionname_simple_add_authors_own'] = 'Добавление дополнительных авторов в своих темах';
+$txt['permissionname_simple_add_authors_any'] = 'Добавление дополнительных авторов в любых темах';
+$txt['permissionname_add_authors_own'] = 'Собственная тема';
+$txt['permissionname_add_authors_any'] = 'Любая тема';
