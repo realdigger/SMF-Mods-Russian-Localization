@@ -1,0 +1,7 @@
+// Allow Deny Boards
+$txt['enable_allow_deny'] = 'Включить запрет доступа для групп';
+$txt['desc_enable_allow_deny'] = 'С помощью этого вы можете запрещать доступ в разделы для заданных групп.';
+$txt['deny_groups'] = 'Группы без доступа';
+$txt['deny_groups_desc'] = 'Группы, которым запрещен доступ в раздел.';
+$txt['membergroups_deny_board'] = 'Недоступные разделы';
+$txt['membergroups_deny_board_desc'] = 'Недоступные этой группе разделы';
