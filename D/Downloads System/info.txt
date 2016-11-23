@@ -10,4 +10,4 @@
 [win1251] да
 [utf8] да
 [type] мод
-[comment] Запаковать в архив и установить как мод
+[comment] Запаковать в архив и установить как мод. Или скопировать файлы Downloads.russian[-utf8].php в Themes/default/languages
