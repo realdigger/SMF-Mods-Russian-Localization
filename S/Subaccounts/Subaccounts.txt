@@ -1,0 +1,104 @@
+/****  Start of SubAccount Mod ****/
+// These take care of the permissions
+$txt['permissiongroup_simple_subaccounts'] = 'Создать или изменить персонажей';
+$txt['permissiongroup_subaccounts'] = 'Персонажи';
+$txt['cannot_subaccounts_create_own'] = 'Извините, у Вас недостаточно прав, чтобы создавать персонажей для этого профиля.';
+$txt['cannot_subaccounts_create_any'] = $txt['cannot_subaccounts_create_own'];
+$txt['permissionname_subaccounts_create'] = 'Создать персонажа';
+$txt['permissionname_subaccounts_create_own'] = 'Мои персонажи';
+$txt['permissionname_subaccounts_create_any'] = 'Любые персонажи';
+$txt['permissionhelp_subaccounts_create'] = 'Создайте своих персонажей, или новый профиль для персонажа.';
+
+$txt['cannot_subaccounts_delete_own'] = 'Извините, у Вас недостаточно прав, чтобы удалить персонажа из этого профиля.';
+$txt['cannot_subaccounts_delete_any'] = $txt['cannot_subaccounts_delete_own'];
+$txt['permissionname_subaccounts_delete'] = 'Убить персонажа';
+$txt['permissionname_subaccounts_delete_own'] = 'Свои персонажи';
+$txt['permissionname_subaccounts_delete_any'] = 'Другие персонажи';
+$txt['permissionhelp_subaccounts_delete'] = 'Убрать персонажа из этого профиля.';
+
+$txt['cannot_subaccounts_merge_own'] = 'Извините, у вас недостаточно прав для слияния персонажей в этом профиле.';
+$txt['cannot_subaccounts_merge_any'] = $txt['cannot_subaccounts_merge_own'];
+$txt['permissionname_subaccounts_merge'] = 'Слияние персонажей';
+$txt['permissionname_subaccounts_merge_own'] = 'Свои';
+$txt['permissionname_subaccounts_merge_any'] = 'Любые персонажи';
+$txt['permissionhelp_subaccounts_merge'] = 'Соединить персонажей в профиле.';
+
+$txt['cannot_subaccounts_split_own'] = 'Извините, у вас недостаточно прав для разделения персонажей в этом профиле.';
+$txt['cannot_subaccounts_split_any'] = $txt['cannot_subaccounts_split_own'];
+$txt['permissionname_subaccounts_split'] = 'Расцепить персонажей';
+$txt['permissionname_subaccounts_split_own'] = 'Свои';
+$txt['permissionname_subaccounts_split_any'] = 'Любые персонажи';
+$txt['permissionhelp_subaccounts_split'] = 'Расцепить персонажей.';
+
+// Settings
+$txt['core_settings_item_subaccount'] = 'Персонажи';
+$txt['core_settings_item_subaccount_desc'] = 'Включение этой функции позволит пользователям завести новых персонажей, и редактировать их через свои профили.';
+$txt['subaccount_view_all'] = 'Показать персонажей';
+$txt['managesubaccounts_information'] = 'Если вы хотите включить или выключить эту функцию, используйте переключатель внизу, или кнопку вкл\выкл на центральной странице функций.<br /><br />
+	Когда функция включена, вы можете настроить различные опции, включая настройки максимального количества персонажей, которых может иметь каждый пользователь, а также решить, включать новых персонажей в пользовательскую группу профиля или нет. Если вы хотите настроить права для каждой группы, посетите  <a href="' . $scripturl . '?action=admin;area=permissions">Permissions</a> section of your admin panel.';
+$txt['enableSubAccounts'] = 'Разрешить пользователям создавать персонажей';
+$txt['maxSubAccounts'] = 'Максимальное количество персонажей <div class="smalltext">(0 for unlimited)</div>';
+$txt['subaccountsInheritParentGroup'] = 'Новые персонажи входят в группы профиля';
+$txt['subaccountsShowInMemberlist'] = 'Показать список групп персонажа';
+$txt['subaccountsShowInProfile'] = 'Показывать персонажей в профилях пользователей';
+$txt['subaccountsEnablePortalBlock'] = 'Показывать блок на портале <div class="smalltext">(Future Feature)</div>';
+$txt['subaccount_no_portal'] = 'Портал недоступен';
+$txt['subaccount_configure_groups'] = 'Конфигурировать персонажей для списка';
+$txt['subaccount_configure_groups_desc'] = 'Этот раздел позволяет настроить количество персонажей, которых может иметь каждый член группы. Пользователь получает разрешение на то количество персонажей, которое позволено иметь членам его основной группы. 0 для бесконечного количества.';
+$txt['subaccount_group_settings'] = 'Настроить персонажей в списке пользователей';
+
+// Modlog
+$txt['modlog_ac_delete_subaccount'] = 'Удаленный персонаж &quot;{name}&quot; from &quot;{parent}&quot;';
+$txt['modlog_ac_merge_subaccount'] = 'Прикрепленный персонаж &quot;{name}&quot; into &quot;{parent}&quot;';
+
+// These take care of the profile stuff
+// First the buttons
+$txt['button_create'] = 'Создать / Присоединить';
+$txt['button_merge'] = 'Слить в один';
+$txt['button_split'] = 'Расцепить';
+$txt['button_parent'] = 'Перейти в этого персонажа/сменить профиль';
+$txt['button_share'] = 'Сделать (не)разделимым';
+
+$txt['managesubaccounts'] = 'Управление персонажами';
+$txt['subaccount'] = 'Персонаж';
+$txt['parent_account'] = 'Основной профиль';
+$txt['account_created'] = 'Профиль создан';
+$txt['shared'] = 'Разделен';
+$txt['subaccounts'] = 'Персонажи';
+$txt['modifysubaccounts_desc'] = 'Здесь вы можете управлять своими персонажами. В зависимости от выбора администрации, вы можете создавать и удалять персонажей, сливать персонажей в один, превращать основные профили в персонажей (если у вас есть пароль) - и наоборот. Также, вы можете нарезать аккаунты мелко, посыпать специями, запускать их в космос, играть на них  музыку, использовать как подставку, и, на худой конец, забивать ими гвозди. <br /><br />Внимание! Управлять "дочерними" персонажами надо из профиля Вашего основного аккаунта - это тот, под которым Вы зарегистрированы на этом форуме. Из основного профиля можно редактировать аватары персонажей и все подписи. Удаление персонажа переместит все его посты, темы, модерационные действия, баны и ошибки в основной профиль. Слияние персонажей переместит всё в одного';
+$txt['subaccounts_merge_desc'] = 'Выберите профиль, который вы хотите слить с персонажем  "<strong>%s</strong>" into.';
+$txt['create_subaccount_desc'] = 'Введите имя вашего персонажа. Если вы хотите превратить существующий профиль в персонажа, то флаг вам в руки, тогда введите пароль этого профиля. Вы можете нажать иконку с восклицательным знаком, чтобы проверить имя персонажа на доступность.';
+$txt['subaccount_create_pass'] = 'Если аккаунт занят или является чужим персонажем, введите пароль!';
+$txt['subaccount_create_pass_admin'] = 'Нужен ваш пароль для создания нового персонажа. Если вы конвертируете профиль в персонажа, введите пароль профиля.';
+$txt['subaccounts_split_desc'] = 'Введите адрес электронной почты и новый пароль, для каждого персонажа, которых вы хотите разделить.';
+$txt['subaccounts_reassign_desc'] = 'Введите Ваш пароль.';
+$txt['current_subaccounts'] = 'Поточные персонажи';
+$txt['current_subaccounts_none'] = 'Нет персонажей, присоединенных к этому профилю.';
+$txt['change_subaccount'] = 'Смена персонажа';
+$txt['choose_subaccount'] = 'Выбрать персонажа';
+$txt['use_subaccount'] = 'Использовать персонажа';
+$txt['identification_by_smf'] = 'Используется для индентификации на форуме.';
+$txt['subaccount_create_success'] = 'Вы успешно убили персонажа.';
+$txt['subaccount_delete_success'] = 'Вы успешно слили персонажей воедино';
+$txt['subaccount_merge_success'] = 'Вы успешно слили персонажей воедино';
+$txt['deleteAccount_subaccount'] = 'Таки удалить персонажа?';
+$txt['deleteAccount_subaccount_sure'] = 'Таки вы точно отвечаете за последствия?';
+$txt['no_subaccount_login'] = 'Вы не можете использовать этого персонажа. Для входа используется только основной профиль.';
+$txt['cannot_delete_subaccount'] = 'Вы не можете удалить этого персонажа.';
+$txt['cannot_delete_subaccount_shared'] = 'Вы не можете удалить разделённого персонажа, которого не создавали.';
+$txt['subaccount_error'] = 'Вот такая вот ошибочка вышла';
+$txt['subaccount_not_selected'] = 'Персонажи не выбраны';
+$txt['subaccount_cannot_create'] = 'Нельзя создать персонажа с таким именем. Очевидно, оно матерное';
+$txt['cannot_merge_subaccounts_of_subaccounts'] = 'Персонажи не могут иметь персонажей, это слишком шизоидно даже для нас.';
+$txt['registration_username_available'] = 'Имя доступно';
+$txt['registration_username_unavailable'] = 'Имя недоступно';
+$txt['registration_username_check'] = 'Проверить имя на доступность';
+$txt['registration_password_short'] = 'Пароль слишком короткий';
+$txt['registration_password_reserved'] = 'Пароль содержит ваше имя и/или адрес почты';
+$txt['registration_password_numbercase'] = 'Пароль должен содержать большие и малые буквы, а также цифры';
+$txt['registration_password_no_match'] = 'Пароли не совпадают';
+$txt['registration_password_valid'] = 'Пароль верный';
+$txt['subaccount_too_many_selected'] = 'Смертный, твои уловки смешны. У тебя может быть всего один основной профиль, ибо так решили Боги';
+$txt['subaccount_posts'] = 'Все посты:<span class="smalltext">(Включая персонажей)</span>';
+$txt['search_subaccount_users'] = 'Искать по всем персонажам вышеуказанного пользователя';
+/****  End of SubAccount Mod ****/
