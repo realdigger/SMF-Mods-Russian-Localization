@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:UltimateProfileRUS</id>
+	<name>Ultimate Profile RUS</name>
+	<version>0.3</version>
+	<type>modification</type>
+
+	<install>
+		<modification format="xml" type="file">russian.xml</modification>
+		<modification format="xml" type="file">russian-utf8.xml</modification>
+		<require-file name="UltimateProfile.russian.php" destination="$languagedir" />	
+		<require-file name="UltimateProfile.russian-utf8.php" destination="$languagedir" />
+		<redirect url="$scripturl?action=admin;area=modsettings;sa=ultprofile" timeout="1000" />
+	</install>
+	
+	<uninstall>
+		<modification type="file" reverse="true">russian.xml</modification>
+		<modification type="file" reverse="true">russian-utf8.xml</modification>
+		<remove-file name="$languagedir/UltimateProfile.russian.php" />
+		<remove-file name="$languagedir/UltimateProfile.russian-utf8.php" />
+		<redirect url="$scripturl?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+</package-info>

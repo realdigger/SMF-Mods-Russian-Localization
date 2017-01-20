@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:UltimateProfileRUS</id>
+	<version>0.3</version>
+		
+	<file name="$languagedir/Modifications.russian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// Ultimate Profile
+$txt['ultimate_profile'] = 'Расширенный профиль';
+$txt['permissionname_edit_ultimate_profile'] = 'Изменение расширенного профиля';
+$txt['permissionname_simple_edit_ultimate_profile_own'] = 'Изменение своих расширенных профилей';
+$txt['permissionname_simple_edit_ultimate_profile_any'] = 'Изменение любых расширенных профилей';
+$txt['permissionname_edit_ultimate_profile_own'] = 'Свой профиль';
+$txt['permissionname_edit_ultimate_profile_any'] = 'Любой профиль';
+$txt['permissionhelp_edit_ultimate_profile'] = 'Укажите, можно ли пользователям данной группы редактировать расширенные версии профилей.';
+$txt['cannot_edit_ultimate_profile_own'] = 'Вам не разрешено изменять собственный расширенный профиль.';
+$txt['cannot_edit_ultimate_profile_any'] = 'Вам не разрешено редактировать расширенные профили.';
+]]></add>
+		</operation>
+	</file>
+	
+</modification>
