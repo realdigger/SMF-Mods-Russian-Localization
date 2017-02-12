@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xslt/modification.xsl" type="text/xsl"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+
+	<file name="$themedir/PmxBlogHeader.php" error="skip">
+		<operation>
+			<search position="replace"><![CDATA[$title = $txt['months'][(int) $now['mon']] .' '. $now['year'];]]></search>
+			<add><![CDATA[$title = $txt['months_titles'][(int) $now['mon']] .' '. $now['year'];]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<a href="'. $scripturl .'?action=pmxblog;sa='. $context['PmxBlog']['mode'].$calaction.$context['PmxBlog']['UserLink'].'"><b>'. $txt['months'][$m] .'</b></a>]]></search>
+			<add><![CDATA[<a href="'. $scripturl .'?action=pmxblog;sa='. $context['PmxBlog']['mode'].$calaction.$context['PmxBlog']['UserLink'].'"><b>'. $txt['months_titles'][$m] .'</b></a>]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[echo $txt['months'][$m];]]></search>
+			<add><![CDATA[echo $txt['months_titles'][$m];]]></add>
+		</operation>
+	</file>
+
+</modification>

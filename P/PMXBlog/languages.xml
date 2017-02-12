@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="xslt/modification.xsl" type="text/xsl"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+
+	<file name="$themedir/languages/Modifications.russian.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['pmxblog_enabled'] = 'Включить блоги PortaMx';
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/languages/Help.russian.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$helptxt['pmxblog_enabled'] = 'Отключение мода PmxBlog. Данные в таблицах базы данных не изменяются. Можно активировать PmxBlog обратно в любое время.';
+]]></add>
+		</operation>
+	</file>
+
+</modification>

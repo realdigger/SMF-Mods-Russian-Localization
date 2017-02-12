@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>PMXBlog RUS</name>
+	<id>Bugo:PMXBlogRUS</id>
+	<type>modification</type>
+	<version>0.2</version>
+
+	<install for="2.0 - 2.99.99">
+		<modification format="xml" type="file">languages.xml</modification>
+		<modification format="xml" type="file">languages-utf8.xml</modification>
+		<modification format="xml" type="file">install.xml</modification>
+		<require-file name="PmxBlog.russian.php" destination="$languagedir" />
+		<require-file name="PmxBlog.russian-utf8.php" destination="$languagedir" />
+		<require-file name="PmxBlogNotify.russian.php" destination="$languagedir" />
+		<require-file name="PmxBlogNotify.russian-utf8.php" destination="$languagedir" />
+		<redirect url="$scripturl?action=pmxblog;sa=admin" timeout="1000" />
+	</install>
+
+	<uninstall for="2.0 - 2.99.99">
+		<modification format="xml" type="file" reverse="true">languages.xml</modification>
+		<modification format="xml" type="file" reverse="true">languages-utf8.xml</modification>
+		<modification format="xml" type="file" reverse="true">install.xml</modification>
+		<remove-file name="$languagedir/PmxBlog.russian.php" />
+		<remove-file name="$languagedir/PmxBlog.russian-utf8.php" />
+		<remove-file name="$languagedir/PmxBlogNotify.russian.php" />
+		<remove-file name="$languagedir/PmxBlogNotify.russian-utf8.php" />
+		<redirect url="$scripturl?action=admin;area=packages;sa=browse" timeout="1000" />
+ </uninstall>
+ 
+</package-info>
