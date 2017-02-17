@@ -9,4 +9,4 @@
 [win1251] да  
 [utf8] да  
 [type] текст  
-[comment] [comment] Добавить в файл Modifications.russian[-utf8].php
+[comment] Добавить в файл Modifications.russian[-utf8].php
