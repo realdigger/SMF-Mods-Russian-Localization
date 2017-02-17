@@ -1,9 +1,9 @@
 [mod_title] Advanced Contact Form  
 [mod_id] Deprecated:Advanced_Contact  
 [mod_link] http://custom.simplemachines.org/mods/index.php?mod=1352  
-[mod_version] 1.1 
+[mod_version] 1.1  
 [author] digger   
-[link]  http://mysmf.ru
+[link]  http://mysmf.ru  
 [license] CC0  
 [conditions]                            
 [win1251] да  
