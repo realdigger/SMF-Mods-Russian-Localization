@@ -1,0 +1,24 @@
+// Begin Contact Page Text Strings
+$txt['smfcontact_contact'] = 'Обратная связь';
+$txt['permissionname_view_contact'] = 'Просмотр контактов';
+$txt['permissionhelp_view_contact'] = 'Позволяет участникам просматривать страницу контактов и отправить сообщение на электронную почту.';
+$txt['cannot_view_contact'] = 'Вы не можете просматривать страницу контактов.';
+$txt['smfcontact_name'] = 'Ваше имя:';
+$txt['smfcontact_subject'] = 'Тема';
+$txt['smfcontact_body'] = 'Текст';
+$txt['smfcontact_emailaddress'] = 'E-mail';
+$txt['smfcontact_sendemail'] = 'Отправить e-mail';
+$txt['smfcontact_messagesent'] = 'Ваше сообщение отправлено!';
+$txt['smfcontact_messagesent_click'] = 'Ваше сообщение отправлено! Нажмите ';
+$txt['smfcontact_messagesent_return'] = 'сюда</a> для возвращения на главную страницу.';
+$txt['smfcontact_errname'] = 'Вы должны ввести свое имя.';
+$txt['smfcontact_errsubject'] = 'Вы должны ввести тему сообщения.';
+$txt['smfcontact_errmessage'] = 'Вы должны ввести текст сообщения.';
+$txt['smfcontact_erremail'] = 'Вы должны ввести ваш email.';
+$txt['smfcontact_titlesent'] = ' - Сообщение отправлено.';
+$txt['smfcontact_form'] = 'Письмо, отправленное через форму обратной связи с сайта  ';
+$txt['smfcontact_formname'] = "Имя: ";
+$txt['smfcontact_formemail'] = "E-mail: ";
+$txt['smfcontact_ip'] = "IP: ";
+$txt['smfcontact_formmessage'] =  "Сообщение: \n";
+$txt['smfcontactpage_email'] = 'E-mail для отправки писем с страницы обратной связи: ';
