@@ -1,6 +1,6 @@
 [mod_title] Contact Page  
 [mod_id] vbgamer45:ContactPage   
-[mod_link] http://custom.simplemachines.org/mods/index.php?mod=377
+[mod_link] http://custom.simplemachines.org/mods/index.php?mod=377  
 [mod_version] 3.2  
 [author] Skipper   
 [link]    
