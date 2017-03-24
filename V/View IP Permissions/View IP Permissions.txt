@@ -1,0 +1,6 @@
+$txt['permissionname_view_ip_address'] = 'Просмотр IP пользователей';
+$txt['permissionhelp_view_ip_address'] = 'Разрешает участникам этой группы видеть IP адреса других пользователей.';
+$txt['permissionname_view_ip_address_own'] = 'Свой IP адрес';
+$txt['permissionname_view_ip_address_any'] = 'Любой IP адрес';
+$txt['permissionname_simple_view_ip_address_own'] = 'Разрешает видеть собственный IP адрес';
+$txt['permissionname_simple_view_ip_address_any'] = 'Разрешает видеть IP адреса других пользователей';
