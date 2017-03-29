@@ -12,8 +12,10 @@
 if (!defined('SMF')) 
 	die('Hacking attempt...');
 
+$txt['ila_insert_button'] = 'Вставить вложение';
 $txt['ila_insert'] = 'Вставить вложение %d';
 $txt['ila_attachment'] = ' [ Вложение ] ';
+$txt['ila_attachment_preview'] = '[ Позиция вложения ]';
 $txt['ila_nopermission'] = ' [ У вас нет прав на просмотр вложений ] ';
 $txt['ila_invalid'] = ' [ Сбой вложения ] ';
 $txt['ila_unapproved'] = ' [ Вложение еще не одобрено ] ';

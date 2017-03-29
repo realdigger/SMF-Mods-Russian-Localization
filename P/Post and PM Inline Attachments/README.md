@@ -1,7 +1,7 @@
 [mod_title] Post and PM Inline Attachments    
 [mod_id] Dougiefresh:ILA  
 [mod_link] http://custom.simplemachines.org/mods/index.php?mod=3770  
-[mod_version] 4.14  
+[mod_version] 5.5  
 [author]  
 [link]  
 [license] BSD License  
