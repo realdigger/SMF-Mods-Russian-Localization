@@ -13,5 +13,5 @@
 В файл /Themes/default/languages/Modifications.russian[-utf8].php добавить  
 
 	$txt['mentions'] = 'Упоминания';
-	$txt['scheduled_task_removeMentions'] = 'Удалить видимые напоминания';
-	$txt['scheduled_task_desc_removeMentions'] = 'Автоматически удалять видимые напоминания старше заданного количества дней';
+	$txt['scheduled_task_removeMentions'] = 'Удалить просмотренные напоминания';
+	$txt['scheduled_task_desc_removeMentions'] = 'Автоматически удалять просмотренные напоминания старше заданного количества дней';
