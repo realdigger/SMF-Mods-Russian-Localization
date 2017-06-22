@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>Ad Management-RUS</name>
+	<id>Avdenago:AdManagement</id>
+	<type>modification</type>
+	<version>3.2</version>
+
+	<install for="2.0-2.0.99">
+		<readme type="file">readme.txt</readme>
+		<require-file name="Ads.russian.php" destination="$languagedir" />
+		<require-file name="Ads.russian-utf8.php" destination="$languagedir" />
+	</install>
+	
+	<uninstall>
+		<remove-file name="$languagedir/Ads.russian.php" />
+		<remove-file name="$languagedir/Ads.russian-utf8.php" />
+	</uninstall>
+</package-info>
