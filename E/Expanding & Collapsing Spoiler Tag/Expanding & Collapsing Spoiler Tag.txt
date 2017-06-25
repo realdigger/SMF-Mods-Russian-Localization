@@ -1,0 +1,5 @@
+$txt['spoiler'] = "Спойлер";
+$txt['debug_hide'] = 'скрыть';
+$txt['spoiler_no_guests'] = 'Выберите, чтобы полностью отключить спойлеры для гостей:';
+$txt['spoiler_no_guest_html'] = '[ Вы должны <a href="' . $scripturl . '?action=login">войти</a> или <a href="' . $scripturl . '?action=register">зарегистрироваться</a> чтобы увидеть содержимое спойлера! ]';
+$txt['spoiler_no_border'] = 'Выберите, чтобы отключить отображение границы под спойлером:';
