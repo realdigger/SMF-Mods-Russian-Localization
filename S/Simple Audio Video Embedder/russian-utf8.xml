@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:AutoEmbedMediaProRUS</id>
+	
+	<file name="$languagedir/Modifications.russian-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// Simple Audio Video Embedder
+$txt['mediapro_admin'] = 'Simple Audio Video Embedder';
+$txt['mediapro_settings'] = 'Настройки';
+$txt['mediapro_save_settings'] = 'Сохранить настройки';
+$txt['mediapro_err_cache'] = 'Директория кэша не имеет прав на запись — это надо исправить!';
+]]></add>
+		</operation>
+	</file>
+
+</modification>
