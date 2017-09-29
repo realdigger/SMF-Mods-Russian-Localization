@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>Custom Form Mod RUS</name>
+	<id>Bugo:CustomFormModRUS</id>
+	<type>modification</type>
+	<version>0.3</version>
+	
+	<install for="1.1 - 1.99.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<modification>changes1x.xml</modification>
+		<modification>russian.xml</modification>
+		<modification>russian-utf8.xml</modification>
+		<redirect url="$scripturl?action=modsettings;sa=customform" timeout="1000" />
+	</install>
+	
+	<uninstall for="1.1 - 1.99.99">
+		<modification reverse="true">changes1x.xml</modification>
+		<modification reverse="true">russian.xml</modification>
+		<modification reverse="true">russian-utf8.xml</modification>
+		<redirect url="$scripturl?action=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+	<install for="2.0 - 2.99.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<modification>changes2x.xml</modification>
+		<modification>russian.xml</modification>
+		<modification>russian-utf8.xml</modification>
+		<redirect url="$scripturl?action=admin;area=modsettings;sa=customform" timeout="1000" />
+	</install>
+	
+	<uninstall for="2.0 - 2.99.99">
+		<modification reverse="true">changes2x.xml</modification>
+		<modification reverse="true">russian.xml</modification>
+		<modification reverse="true">russian-utf8.xml</modification>
+		<redirect url="$scripturl?action=admin;area=packages;sa=browse" timeout="1000" />
+	</uninstall>
+	
+</package-info>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:CustomFormModRUS</id>
+	<version>0.3</version>
+	
+	<file name="$sourcedir/ManageSettings.php">
+		<operation>
+			<search position="before"><![CDATA[array('text', 'CustomForm_view_text'),]]></search>
+			<add><![CDATA[
+			array('text', 'CustomForm_view_button'),]]></add>
+		</operation>
+	</file>
+	
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="after"><![CDATA[
+			'mlist' => array(]]></search>
+			<add><![CDATA[
+			'forms' => array(
+				'title' => !empty($modSettings['CustomForm_view_button']) ? $modSettings['CustomForm_view_button'] : $txt['CustomForm_forms'],
+				'href' => $scripturl . '?action=form',
+				'show' => allowedTo('CustomForm_view_perms'),
+				'sub_buttons' => array(
+				),
+			),]]></add>
+		</operation>
+	</file>
+	
+	<file name="$languagedir/Modifications.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['CustomForm_forms'] = 'Forms';
+$txt['CustomForm_view_button'] = 'View Form Button';
+]]></add>
+		</operation>
+	</file>
+	
+	<file name="$languagedir/Modifications.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['CustomForm_forms'] = 'Forms';
+$txt['CustomForm_view_button'] = 'View Form Button';
+]]></add>
+		</operation>
+	</file>
+	
+</modification>

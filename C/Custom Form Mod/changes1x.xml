@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Bugo:CustomFormModRUS</id>
+	<version>0.3</version>
+	
+	<file name="$sourcedir/ModSettings.php">
+		<operation>
+			<search position="replace"><![CDATA[updateSettings(array('CustomForm_view_title' => $_REQUEST['view_title'], 'CustomForm_view_text' => $_REQUEST['view_text']));]]></search>
+			<add><![CDATA[updateSettings(array('CustomForm_view_title' => $_REQUEST['view_title'], 'CustomForm_view_text' => $_REQUEST['view_text'], 'CustomForm_view_button' => $_REQUEST['view_button']));]]></add>
+		</operation>
+	</file>
+	
+	<file name="$themedir/index.template.php">
+		<operation>
+			<search position="after"><![CDATA[
+	// the [member] list button
+]]></search>
+			<add><![CDATA[
+	// the [form] button
+	global $modSettings;
+	if (allowedTo('CustomForm_view_perms'))
+		echo ($current_action == 'form' || $context['browser']['is_ie4']) ? '<td class="maintab_active_' . $first . '">&nbsp;</td>' : '' , '
+				<td valign="top" class="maintab_' , $current_action == 'form' ? 'active_back' : 'back' , '">
+					<a href="', $scripturl, '?action=form">' , !empty($modSettings['CustomForm_view_button']) ? $modSettings['CustomForm_view_button'] : $txt['CustomForm_forms'] , '</a>
+				</td>' , $current_action == 'form' ? '<td class="maintab_active_' . $last . '">&nbsp;</td>' : '';
+]]></add>
+		</operation>
+	</file>
+	
+	<file name="$themedir/CustomForm.template.php">
+		<operation>
+			<search position="before"><![CDATA[<tr>
+							<td class="windowbg2" valign="top" width="16"><a name="setting_view_text" href="', $scripturl, '?action=helpadmin;help=CustomForm_view_text" onclick="return reqWin(this.href);" class="help"><img src="', $settings['images_url'], '/helptopics.gif" alt="', $txt[119], '" border="0" align="top" /></a></td>
+							<td class="windowbg2" valign="top"><label for="view_text">', $txt['CustomForm_view_text'] , '</label></td>
+							<td class="windowbg2" width="50%">
+								<input type="view_text" name="view_text" id="subject" value="', isset($modSettings['CustomForm_view_text']) ? $modSettings['CustomForm_view_text'] : '', '" />
+							</td>
+						</tr>]]></search>
+			<add><![CDATA[
+						<tr>
+							<td class="windowbg2" valign="top" width="16"></td>
+							<td class="windowbg2" valign="top"><label for="view_button">', $txt['CustomForm_view_button'] , '</label></td>
+							<td class="windowbg2" width="50%">
+								<input type="text" name="view_button" id="view_button" value="', isset($modSettings['CustomForm_view_button']) ? $modSettings['CustomForm_view_button'] : '', '" />
+							</td>
+						</tr>]]></add>
+		</operation>
+	</file>
+	
+	<file name="$languagedir/Modifications.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['CustomForm_forms'] = 'Forms';
+$txt['CustomForm_view_button'] = 'View Form Button';
+]]></add>
+		</operation>
+	</file>
+	
+	<file name="$languagedir/Modifications.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$txt['CustomForm_forms'] = 'Forms';
+$txt['CustomForm_view_button'] = 'View Form Button';
+]]></add>
+		</operation>
+	</file>
+	
+</modification>
