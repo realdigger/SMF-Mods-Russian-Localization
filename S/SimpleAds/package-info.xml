@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>[SiNaN]:SimpleAds</id>
+	<name>SimpleAds</name>
+	<version>1.0.1</version>
+	<type>modification</type>
+	<install for="2.0 - 2.99.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<modification>modification.xml</modification>
+		<require-file name="ManageAds.php" destination="$sourcedir" />
+		<require-file name="Subs-Ads.php" destination="$sourcedir" />
+		<require-file name="Subs-AdsAdmin.php" destination="$sourcedir" />
+		<require-file name="Ads.template.php" destination="$themedir" />
+		<require-file name="ManageAds.template.php" destination="$themedir" />
+		<require-file name="ManageAds.english.php" destination="$languagedir" />
+		<require-file name="manageads.css" destination="$themedir/css" />
+		<require-file name="ads.js" destination="$themedir/scripts" />
+		<require-file name="manageads.js" destination="$themedir/scripts" />
+		<require-file name="ads.png" destination="$imagesdir/admin" />
+		<require-dir name="sa" destination="$imagesdir" />
+		<database>database.php</database>
+	</install>
+	<uninstall for="2.0 - 2.99.99">
+		<modification reverse="true">modification.xml</modification>
+		<remove-file name="$sourcedir/ManageAds.php" />
+		<remove-file name="$sourcedir/Subs-Ads.php" />
+		<remove-file name="$sourcedir/Subs-AdsAdmin.php" />
+		<remove-file name="$themedir/Ads.template.php" />
+		<remove-file name="$themedir/ManageAds.template.php" />
+		<remove-file name="$languagedir/ManageAds.english.php" />
+		<remove-file name="$themedir/css/manageads.css" />
+		<remove-file name="$themedir/scripts/ads.js" />
+		<remove-file name="$themedir/scripts/manageads.js" />
+		<remove-file name="$imagesdir/images/admin/ads.gif" />
+		<remove-dir name="$imagesdir/sa" />
+	</uninstall>
+</package-info>

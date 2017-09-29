@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>[SiNaN]:SimpleAds</id>
+	<version>1.0.1</version>
+
+	<file name="$boarddir/index.php">
+		<operation>
+			<search position="replace"><![CDATA[// If $maintenance is set specifically to 2, then we're upgrading or something.]]></search>
+			<add><![CDATA[require_once($sourcedir . '/Subs-Ads.php');
+
+// If $maintenance is set specifically to 2, then we're upgrading or something.]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[	// Do some logging, unless this is an attachment, avatar, toggle of editor buttons, theme option, XML feed etc.]]></search>
+			<add><![CDATA[	load_ads();
+
+	// Do some logging, unless this is an attachment, avatar, toggle of editor buttons, theme option, XML feed etc.]]></add>
+		</operation>
+	</file>
+
+	<file name="$sourcedir/Admin.php">
+		<operation>
+			<search position="replace"><![CDATA[		),
+		'maintenance' => array(]]></search>
+			<add><![CDATA[		),
+		'ads' => array(
+			'title' => $txt['sa_admin_cat_title'],
+			'permission' => array('admin_forum'),
+			'areas' => array(
+				'ads' => array(
+					'label' => $txt['sa_admin_title'],
+					'file' => 'ManageAds.php',
+					'function' => 'ManageAds',
+					'permission' => array('admin_forum'),
+					'icon' => 'ads.png',
+					'subsections' => array(
+						'ads' => array($txt['sa_ads_list_title']),
+						'addad' => array($txt['sa_ads_add_title']),
+						'positions' => array($txt['sa_positions_list_title']),
+						'addposition' => array($txt['sa_positions_add_title']),
+					),
+				),
+			),
+		),
+		'maintenance' => array(]]></add>
+		</operation>
+	</file>
+
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[	if (!empty($settings['strict_doctype']))]]></search>
+			<add><![CDATA[	update_ad_impressions();
+
+	if (!empty($settings['strict_doctype']))]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/BoardIndex.template.php">
+		<operation>
+			<search position="replace"><![CDATA[	template_info_center();]]></search>
+			<add><![CDATA[	echo '<br class="clear" />';
+	template_ad_position('above_info_center');
+
+	template_info_center();]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/Display.template.php">
+		<operation>
+			<search position="replace"><![CDATA[$message['body'], '</div>]]></search>
+			<add><![CDATA[$message['id'] == $context['first_message'] ? template_ad_position('inside_first_post') : '', $message['body'], '</div>]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[		$ignoring = false;]]></search>
+			<add><![CDATA[		if (!isset($msg_counter))
+			$msg_counter = 0;
+		if (++$msg_counter == 2)
+			template_ad_position('after_first_post');
+
+		$ignoring = false;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<a id="lastPost"></a>';]]></search>
+			<add><![CDATA[<a id="lastPost"></a>';
+
+	template_ad_position('after_last_post');]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// SimpleAds
+$txt['sa_admin_cat_title'] = 'SimpleAds';
+$txt['sa_admin_title'] = 'Advertisements';
+$txt['sa_admin_desc'] = 'You can manage advertisements and positions in this area.';
+$txt['sa_ads_list_title'] = 'Ad List';
+$txt['sa_ads_add_title'] = 'Add Ad';
+$txt['sa_ads_edit_title'] = 'Edit Ad';
+$txt['sa_positions_list_title'] = 'Position List';
+$txt['sa_positions_add_title'] = 'Add Position';
+$txt['sa_positions_edit_title'] = 'Edit Position';
+]]></add>
+		</operation>
+	</file>
+
+	<file name="$languagedir/Modifications.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+// SimpleAds
+$txt['sa_admin_cat_title'] = 'SimpleAds';
+$txt['sa_admin_title'] = 'Advertisements';
+$txt['sa_admin_desc'] = 'You can manage advertisements and positions in this area.';
+$txt['sa_ads_list_title'] = 'Ad List';
+$txt['sa_ads_add_title'] = 'Add Ad';
+$txt['sa_ads_edit_title'] = 'Edit Ad';
+$txt['sa_positions_list_title'] = 'Position List';
+$txt['sa_positions_add_title'] = 'Add Position';
+$txt['sa_positions_edit_title'] = 'Edit Position';
+]]></add>
+		</operation>
+	</file>
+</modification>

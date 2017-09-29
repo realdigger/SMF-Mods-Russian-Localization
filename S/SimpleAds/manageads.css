@@ -1,0 +1,30 @@
+dl.sa_form
+{
+	margin: 0;
+	clear: right;
+	overflow: auto;
+}
+dl.sa_form dt
+{
+	font-weight: bold;
+	float: left;
+	clear: both;
+	width: 30%;
+	margin: 0.5em 0 0 0;
+}
+dl.sa_form dd
+{
+	float: left;
+	width: 69%;
+	margin: 0.5em 0 0 0;
+}
+#confirm_buttons
+{
+	text-align: center;
+	padding: 1em 0;
+}
+#body_textarea
+{
+	width: 70%;
+	height: 175px;
+}
