@@ -10,4 +10,4 @@
 [win1251] да  
 [utf8] да  
 [type] текст  
-[comment] Добавить в файл Modifications.russian[-utf8].php  
+[comment] Добавить в файлы ManagePermissions.russian[-utf8].php, Modifications.russian[-utf8].php, Profile.russian[-utf8].php  
