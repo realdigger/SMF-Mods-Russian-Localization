@@ -1,0 +1,33 @@
+/*	Добавить в файл ManagePermissions.russian[-utf8].php */
+
+// Membergroup Signature Permissions Mod - Start
+$txt['permissionname_use_signature_images'] = 'Разрешить изображения в подписи';
+$txt['permissionhelp_use_signature_images'] = 'Разрешает изображения в подписи.';
+$txt['permissionname_use_signature_smileys'] = 'Разрешить смайлы в подписи';
+$txt['permissionhelp_use_signature_smileys'] = 'Разрешает смайлы в подписи.';
+$txt['permissionname_use_signature_links'] = 'Разрешить ссылки в подписи';
+$txt['permissionhelp_use_signature_links'] = 'Разрешает изображения в подписи.';
+$txt['permissionname_use_signature_extras'] = 'Разрешить больше символов, изображений, смайлов и строк; крупнее шрифты в подписи';
+$txt['permissionhelp_use_signature_extras'] = 'Разрешает в два раза больше символов, изображений, смайлов и строк; крупнее на 50% шрифты в подписи.';
+// Membergroup Signature Permissions Mod - End
+
+/*	Добавить в файл Modifications.russian[-utf8].php */
+
+// Membergroup Signature Permissions Mod - Start
+$txt['signature_images_allowed'] = '%1$s изображений разрешено.';
+$txt['signature_images_not_allowed'] = 'Изображения не разрешены.';
+$txt['signature_smileys_allowed'] = '%1$s смайлов aразрешено.';
+$txt['signature_smileys_not_allowed'] = 'Смайлы не разрешены.';
+$txt['signature_links_allowed'] = 'Ссылок разрешено.';
+$txt['signature_links_not_allowed'] = 'Ссылки не разрешены.';
+$txt['signature_max_lines'] = 'До %1$d строк разрешено.';
+$txt['signature_max_font'] = 'Максимальный размер щрифта %1$d.';
+// Membergroup Signature Permissions Mod - End
+
+/* Добавить в файл Profile.russian[-utf8].php */
+
+// Membergroup Signature Permissions Mod - Start
+$txt['profile_error_signature_allow_images'] = 'Вам не разрешено использовать изображения в подписи';
+$txt['profile_error_signature_allow_links'] = 'Вам не разрешено использовать ссылки в подписи';
+$txt['sig_info_short'] = 'Подписи отображаются внизу сообщений в темах и в личных сообщениях.';
+// Membergroup Signature Permissions Mod - End
