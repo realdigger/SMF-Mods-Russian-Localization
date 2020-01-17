@@ -1,4 +1,4 @@
-/*	Добавить в файл ManagePermissions.russian[-utf8].php */
+/* Добавить в файл ManagePermissions.russian[-utf8].php */
 
 // Membergroup Signature Permissions Mod - Start
 $txt['permissionname_use_signature_images'] = 'Разрешить изображения в подписи';
@@ -11,7 +11,7 @@ $txt['permissionname_use_signature_extras'] = 'Разрешить больше �
 $txt['permissionhelp_use_signature_extras'] = 'Разрешает в два раза больше символов, изображений, смайлов и строк; крупнее на 50% шрифты в подписи.';
 // Membergroup Signature Permissions Mod - End
 
-/*	Добавить в файл Modifications.russian[-utf8].php */
+/* Добавить в файл Modifications.russian[-utf8].php */
 
 // Membergroup Signature Permissions Mod - Start
 $txt['signature_images_allowed'] = '%1$s изображений разрешено.';
