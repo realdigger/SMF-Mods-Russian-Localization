@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>Robbo:AltUserPosting</id>
+	<version>1.0.1</version>
+
+    <file name="$languagedir/Errors.russian-utf8.php">
+        <operation>
+            <search position="end" />
+            <add><![CDATA[
+// Alternate user error
+$txt['error_alternate_user'] = 'Выбранный пользователь не существует.';
+]]></add>
+        </operation>
+    </file>
+
+    <file name="$languagedir/ManagePermissions.russian-utf8.php">
+        <operation>
+            <search position="end" />
+            <add><![CDATA[
+// Alternate user permissions
+$txt['permissionname_post_as_alternative_user'] = 'Отправлять сообщения от  другого имени';
+$txt['permissionhelp_post_as_alternative_user'] = 'Позволяет отправлять сообщения от имени любого зарегистрированного пользователя. Также, дает возможность поменять автора любого сообщения, доступного для редактирования.';
+]]></add>
+        </operation>
+    </file>
+
+    <file name="$languagedir/Post.russian-utf8.php">
+        <operation>
+            <search position="end" />
+            <add><![CDATA[
+// Post as alternate user
+$txt['post_alternate_user'] = 'Отправить от другого пользователя';
+$txt['change_user'] = 'Сменить автора';
+$txt['post_alternate_user_descr'] = 'Оставьте пустым для отправки от своего имени';
+]]></add>
+        </operation>
+    </file>
+
+</modification>
